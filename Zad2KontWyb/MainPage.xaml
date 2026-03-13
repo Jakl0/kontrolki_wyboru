@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zad2KontWyb.MainPage"
+             xmlns:sys ="clr-namespace:System;assembly=netstandard"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Picker Title="wybierz specjalizację" SelectedIndexChanged="PickerChange" SelectedIndex="0">
+                <Picker.Items>
+                    <x:String>Internista</x:String>
+                    <x:String>Kardiolog</x:String>
+                    <x:String>Dermatolog</x:String>
+                    <x:String>Okulista</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <DatePicker MinimumDate="{x:Static sys:DateTime.Today}"  DateSelected="DateChange"/>
+
+            <TimePicker TimeSelected="TimeChange" Format="HH:mm"/>
+
+            <Button Clicked="onClick" Text="Zarezerwuj"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

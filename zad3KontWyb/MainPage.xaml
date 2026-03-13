@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zad3KontWyb.MainPage"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <VerticalStackLayout>
+                <Label Text="Rozmiar pizzy"/>
+                <RadioButton Content="Mała (25 cm)" Value="20"/>
+                <RadioButton Content="Średnia (32 cm)" Value="28"/>
+                <RadioButton Content="Duża (45 cm)" Value="38"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Rodzaj ciasta"/>
+                <RadioButton Content="Cienkie" Value="0"/>
+                <RadioButton Content="Grube" Value="0"/>
+                <RadioButton Content="Z serem w brzegu (+5 zł)" Value="5"/>
+            </VerticalStackLayout>
+
+            <Label Text="Ilość"/>
+            <Stepper ValueChanged="StepperChange"
+                     Maximum="10"
+                     Minimum="1" 
+                     Value="1"/>
+            
+            <Label x:Name="stepLabel" 
+                   Text="khg"
+                   />
+            <TimePicker TimeSelected="TimeChange" Format="HH:mm"/>
+
+            <Label Text="Cena końcowa: 20 zł"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
