@@ -27,7 +27,7 @@
             <DatePicker x:Name="_data"  Format="dd/MM/yyyy" MinimumDate="08/16/2026" MaximumDate="08/18/2026"/>
 
             <VerticalStackLayout>
-                <RadioButton x:Name="Bas" Content="Basic (wstęp + materiały) - 200 zł" Value="200"/>
+                <RadioButton x:Name="Bas" Content="Basic (wstęp + materiały) - 200 zł" Value="200" IsChecked="True"/>
                 <RadioButton x:Name="Stan" Content="Standard (wstęp + materiały) – 350 zł" Value="350"/>
                 <RadioButton x:Name="Prem"  Content="Premium (+ warsztat) – 500 zł" Value="500"/>
             </VerticalStackLayout>

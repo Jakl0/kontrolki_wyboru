@@ -107,3 +107,62 @@
         }
     }
 }
+/*
+ ************************************************************************************************* 
+ 
+nazwa funkcji:        DateChange
+opis funkcji:        funkcja służy aktualizacji zmiennej przechowywującej wybraną datę aby wyświetlić ją w alercie
+parametry:           standardowy parametr object sender i parametr daty DateChangedEventArgs
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+*************************************************************************************************
+
+nazwa funkcji:        StepperChange
+opis funkcji:        funkcja która aktualizuje zmienną posiadającą ilość ludzi towarzyszących po zmianie steppera
+parametry:           standardowy parametr object sender i parametr ValueChangedEventArgs
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+*************************************************************************************************
+
+nazwa funkcji:       PickerChange
+opis funkcji:        funkcja aktualizuje zmienną odpowiadającą nazwie firmy wybranej przez użytkownika
+parametry:           standardowe parametry w funkcjach net maui
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+*************************************************************************************************
+
+nazwa funkcji:        PakietChanged
+opis funkcji:        funkcja która aktualizuje wartość pakietu i cenę końcową gdy zaznaczymy radiobutton
+parametry:           standardowy parametr object sender i parametr CheckedChangedEventArgs
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+*************************************************************************************************
+
+nazwa funkcji:        onClick
+opis funkcji:        funkcja wyświetlająca błędny bądź poprawny alert po kliknięciu przycisku rejestracji przez użytkownika wyświetlający wybrane dane
+parametry:           standardowe parametry w funkcjach net maui
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+*************************************************************************************************
+
+ */
