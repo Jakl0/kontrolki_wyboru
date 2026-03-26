@@ -12,29 +12,31 @@
 
             <VerticalStackLayout>
                 <Label Text="Rozmiar pizzy"/>
-                <RadioButton Content="Mała (25 cm)" Value="20"/>
-                <RadioButton Content="Średnia (32 cm)" Value="28"/>
-                <RadioButton Content="Duża (45 cm)" Value="38"/>
+                <RadioButton x:Name="Smol" Content="Mała (25 cm)" Value="20"  IsChecked="True"/>
+                <RadioButton x:Name="Mid" Content="Średnia (32 cm)" Value="28" />
+                <RadioButton x:Name="Bigg" Content="Duża (45 cm)" Value="38" />
             </VerticalStackLayout>
             <VerticalStackLayout>
                 <Label Text="Rodzaj ciasta"/>
-                <RadioButton Content="Cienkie" Value="0"/>
-                <RadioButton Content="Grube" Value="0"/>
-                <RadioButton Content="Z serem w brzegu (+5 zł)" Value="5"/>
+                <RadioButton x:Name="Thin" Content="Cienkie" Value="0" IsChecked="True" />
+                <RadioButton x:Name="Thick" Content="Grube" Value="0"/>
+                <RadioButton x:Name="Cheese" Content="Z serem w brzegu (+5 zł)" Value="5"/>
             </VerticalStackLayout>
 
             <Label Text="Ilość"/>
-            <Stepper ValueChanged="StepperChange"
+            <Stepper x:Name="stepperrr"
+                     
                      Maximum="10"
                      Minimum="1" 
-                     Value="1"/>
+                     Increment="1"
+                     />
             
-            <Label x:Name="stepLabel" 
-                   Text="khg"
+            <Label x:Name="_stepLabel" 
+                   Text="1"
                    />
-            <TimePicker TimeSelected="TimeChange" Format="HH:mm"/>
+            <TimePicker  Format="HH:mm"/>
 
-            <Label Text="Cena końcowa: 20 zł"/>
+            <Label x:Name="PriceLabel" Text="Cena końcowa: 20 zł"/>
 
 
         </VerticalStackLayout>

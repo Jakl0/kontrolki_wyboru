@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zad4KontWyb.MainPage"
+             xmlns:sys="clr-namespace:System;assembly=netstandard" 
+             >
+
+    <ScrollView>
+       <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+           
+            <Entry  x:Name="nameEntry" Placeholder="Imie"/>
+            <Entry  x:Name="surnameEntry" Placeholder="Nazwisko"/>
+            <Entry  Keyboard="Email" x:Name="mailEntry" Placeholder="adres E-mail"/>
+            <Picker Title="Wybór Firmy/Organizacji" x:Name="Picke">
+                <Picker.Items>
+                    <x:String>Biedronka</x:String>
+                    <x:String>Żabka</x:String>
+                    <x:String>Lidl</x:String>
+                    <x:String>Aldi</x:String>
+                    <x:String>Siatex</x:String>
+                    <x:String>Inna</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <DatePicker x:Name="_data"  Format="dd/MM/yyyy" MinimumDate="08/16/2026" MaximumDate="08/18/2026"/>
+
+            <VerticalStackLayout>
+                <RadioButton x:Name="Bas" Content="Basic (wstęp + materiały) - 200 zł" Value="200"/>
+                <RadioButton x:Name="Stan" Content="Standard (wstęp + materiały) – 350 zł" Value="350"/>
+                <RadioButton x:Name="Prem"  Content="Premium (+ warsztat) – 500 zł" Value="500"/>
+            </VerticalStackLayout>
+
+            <Label Text="liczba osób towarzyszących"/>
+            <Stepper Maximum="3" Minimum="0" x:Name="Steph" Value="0" />
+            <Label x:Name="_stepLabel" Text="0" />
+
+            <Label x:Name="priceLabel" Text="Cena końcowa: 200 zł"/>
+           
+            <Button  Text="Zarejestruj się" x:Name="baton"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
