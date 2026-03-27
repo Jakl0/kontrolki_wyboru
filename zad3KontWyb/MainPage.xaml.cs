@@ -78,13 +78,40 @@
     }
 }
 /*
-
-
-
+ ************************************************************************************************* 
  
+nazwa funkcji:        WielkoscCiastaPizzyChanged
+opis funkcji:        funkcja obsługująca trzy radiobuttony i zmienia wartość ceny całkowitej w czasie rzeczywistym
+parametry:           standardowy parametr object sender i parametr daty 
+
+zwracany typ:        brak
+autor:               xxxxx
 
 
 
+*************************************************************************************************
+
+nazwa funkcji:        StepperChange
+opis funkcji:        funkcja która aktualizuje zmienną posiadającą ilość sztuk pizzy
+parametry:           standardowy parametr object sender i parametr ValueChangedEventArgs
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+*************************************************************************************************
+
+nazwa funkcji:       CiastoChanged
+opis funkcji:        druga funkcja obługująca kolejną grupę trzech radiobuttonów równięż aktualizująca cenę w czasie rzeczywistym
+parametry:           standardowe parametry w funkcjach net maui
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+*************************************************************************************************
 
 
  */
