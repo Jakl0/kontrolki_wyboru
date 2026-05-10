@@ -1,0 +1,11 @@
+1. Dlatego że Product to stworzona klasa , która wyświetlona bezpośrednio dałaby wynik " MyApp.Product " , a nie oczekiwaną nazwę
+
+2. Oznacza że żaden z elementów nie jest zaznaczony , występuje w momencie otwarcia programu jeśli zostawimy wartość domyślną
+
+3. Aby niemożliwe było zaznaczenie kilku przycisków na raz , musimy przypisać je do tej samej grupy
+
+4. Content to tekst widoczny dla urzytkownika , a value to wartość wykorzystywana do przesyłania danych z formularza
+
+5. Oznacza , że niemożliwe jest wybranie wcześniejszych dat niż ta dzisiejsza
+
+6. Ponieważ określa ilość danego produktu , lepiej nie kupywać nic niż kupić 0 chleba
